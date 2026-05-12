@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta
+      name="description"
+      content="<!DOCTYPE html>"
+    />
+    <title>MentoV8</title>
+    <meta name="created-at" content="27-02-2026 10:21 PM" />
+    <meta name="updated-at" content="27-02-2026 10:22 PM" />
+    
+    
+    
+    <meta name="tags" content="MentoV8" />
+    <link rel="stylesheet" href="https://app.notesnook.com/assets/editor-styles.css?d=1690887574068">
+
+    <style>
+
+    .image-container {
+      display: block;
+    }
+    .image-container.align-right {
+      display: flex;
+      justify-content: end;
+    }
+    .image-container.align-center {
+      display: flex;
+      justify-content: center;
+    }
+    .image-container.float {
+      float: left;
+    }
+    .image-container.float.align-right {
+      float: right;
+    }
+
+    body {
+      background-color: transparent !important;
+      color: #202124;
+      font-family: "Open Sans", "Noto Sans", Frutiger, Calibri, Myriad, Arial, Ubuntu, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .math-block {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #212121;
+    }
+
+    p {
+      margin-bottom: 0px;
+    }
+    
+    p[data-spacing="double"] {
+      margin-top: 1em;
+    }
+    
+    p[data-spacing="single"] {
+      margin-top: 0px;
+    }
+
+    p[data-spacing="single"]:empty {
+      margin-top: 1em;
+    }
+    
+    pre.codeblock {
+      overflow-x: auto;
+    }
+    
+    iframe {
+      max-width: 100% !important;
+      background-color: transparent !important;
+    }
+    
+    li > p {
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    
+    .checklist > li {
+      list-style: none;
+      margin: 0.25em 0;
+    }
+    
+    .checklist > li::before {
+      content: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cg%20id%3D%22checklist-unchecked%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20id%3D%22Rectangle%22%20width%3D%2215%22%20height%3D%2215%22%20x%3D%22.5%22%20y%3D%22.5%22%20fill-rule%3D%22nonzero%22%20stroke%3D%22%234C4C4C%22%20rx%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A");
+      cursor: pointer;
+      height: 1.1em;
+      margin-left: -2.5em;
+      margin-top: 0em;
+      position: absolute;
+      width: 1.5em;
+      padding-left: 1em;
+    }
+    
+    .checklist li.checked::before {
+      content: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cg%20id%3D%22checklist-checked%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20id%3D%22Rectangle%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23008837%22%20fill-rule%3D%22nonzero%22%20rx%3D%222%22%2F%3E%3Cpath%20id%3D%22Path%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22nonzero%22%20d%3D%22M11.5703186%2C3.14417309%20C11.8516238%2C2.73724603%2012.4164781%2C2.62829933%2012.83558%2C2.89774797%20C13.260121%2C3.17069355%2013.3759736%2C3.72932262%2013.0909105%2C4.14168582%20L7.7580587%2C11.8560195%20C7.43776896%2C12.3193404%206.76483983%2C12.3852142%206.35607322%2C11.9948725%20L3.02491697%2C8.8138662%20C2.66090143%2C8.46625845%202.65798871%2C7.89594698%203.01850234%2C7.54483354%20C3.373942%2C7.19866177%203.94940006%2C7.19592841%204.30829608%2C7.5386474%20L6.85276923%2C9.9684299%20L11.5703186%2C3.14417309%20Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A");
+    }
+    
+    .checklist li.checked {
+      color: #505050;
+    }
+    
+    [dir="rtl"] .checklist > li::before {
+      margin-left: 0;
+      margin-right: -1.5em;
+    }
+    
+    blockquote {
+      border-left: 5px solid #e5e5e5;
+      padding-left: 10px;
+      margin-top: 0px;
+    }
+    
+    code:not(pre code) {
+      background-color: #f7f7f7;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      padding: 3px 5px 0px 5px;
+      font-family: Hack, Consolas, "Andale Mono", "Lucida Console", "Liberation Mono", "Courier New", Courier, monospace !important;
+      font-size: 10pt !important;
+    }
+    
+    .ProseMirror code > span {
+      font-family: Hack, Consolas, "Andale Mono", "Lucida Console", "Liberation Mono", "Courier New", Courier, monospace !important;
+    }
+    
+    pre {
+      padding: 10px;
+      background-color: #e5e5e5;
+      border-radius: 5px;
+      font-family: Hack, Consolas, "Andale Mono", "Lucida Console", "Liberation Mono", "Courier New", Courier, monospace !important;
+        margin-bottom: 16px !important;
+    }
+    
+    table {
+      border-collapse: collapse;
+      margin: 0;
+      overflow: hidden;
+      table-layout: fixed;
+    }
+    
+    table td,
+    table th {
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      min-width: 1em;
+      padding: 3px 5px;
+      position: relative;
+      vertical-align: top;
+    }
+    
+    table td > *,
+    table th > * {
+      margin-bottom: 0;
+    }
+    
+    table th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+      text-align: left;
+    }
+    table p {
+      margin: 0;
+    }
+    </style>
+    <style>
+      code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:0 0;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#282a36}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#6272a4}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#ff79c6}.token.boolean,.token.number{color:#bd93f9}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#50fa7b}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#f1fa8c}.token.keyword{color:#8be9fd}.token.important,.token.regex{color:#ffb86c}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+    </style>
+  </head>
+  <body>
+    <h1>MentoV8</h1>
+    <p data-block-id="uQB4OxFJ" data-spacing="double">&lt;!DOCTYPE html&gt;</p><p data-block-id="XAr3OW09" data-spacing="single">&lt;html lang="en"&gt;</p><p data-block-id="PYhEIExe" data-spacing="single">&lt;head&gt;</p><p data-block-id="oWUsmFxK" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;</p><p data-block-id="fokyDz54" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p><p data-block-id="dwRm_EdY" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;MENTO AI V8 | TG ROLOMANE (B HOOVE)&lt;/title&gt;</p><p data-block-id="_CArxWkX" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;</p><p data-block-id="zodhS40E" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:root { --gold: #d4af37; --obsidian: #05080f; --emerald: #00ff00; --sky: #00e5ff; --error: #ff4444; }</p><p data-block-id="ACQ9SwPk" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body { background: var(--obsidian); color: white; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 20px; text-align: center; display: none; } /* Hidden until region is detected */</p><p data-block-id="XIuUts7W" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.container { max-width: 650px; margin: auto; border: 4px solid var(--gold); padding: 30px; border-radius: 20px; box-shadow: 0 0 50px rgba(212,175,55,0.2); }</p><p data-block-id="UUaH5PRT" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p data-block-id="3bwDFLix" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#timer { display: flex; justify-content: center; gap: 15px; margin: 25px 0; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px; }</p><p data-block-id="kljKs2NF" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.unit { font-size: 2.2rem; font-weight: bold; color: var(--gold); }</p><p data-block-id="QAVW8yuq" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.label { font-size: 0.6rem; color: #888; text-transform: uppercase; display: block; }</p><p data-block-id="_kBh961W" data-spacing="single"><br></p><p data-block-id="S-roO_aJ" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.price-card { border: 2px solid var(--error); padding: 25px; border-radius: 15px; background: rgba(255,0,0,0.05); margin-bottom: 20px; }</p><p data-block-id="0WOdgpmb" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.price-val { font-size: 3.5rem; font-weight: bold; margin: 10px 0; }</p><p data-block-id="6bbq9oAr" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p data-block-id="XyWI7h5N" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.btn { width: 100%; padding: 18px; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; font-size: 1.1rem; margin-top: 10px; transition: 0.2s; }</p><p data-block-id="OxfHWvsZ" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.btn-gold { background: var(--error); color: white; }</p><p data-block-id="VxLPSHxF" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.btn-paypal { background: #003087; color: white; }</p><p data-block-id="07axUEPL" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p data-block-id="ec5BnuN8" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.fame-badge { border: 1px solid #333; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; color: var(--gold); margin: 5px; display: inline-block; }</p><p data-block-id="QiQP6YKW" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; justify-content: center; align-items: center; }</p><p data-block-id="HXlK4wNR" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.popup { background: var(--obsidian); border: 3px solid var(--gold); padding: 30px; border-radius: 20px; max-width: 450px; text-align: left; }</p><p data-block-id="j3DGsXCd" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;</p><p data-block-id="iPpEmlBG" data-spacing="single">&lt;/head&gt;</p><p data-block-id="EZ2Hr86C" data-spacing="single">&lt;body id="mainBody"&gt;</p><p data-block-id="3dpZjP7U" data-spacing="single"><br></p><p data-block-id="U0mo5wfX" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="overlay"&gt;</p><p data-block-id="7hpn7CUA" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="popup"&gt;</p><p data-block-id="gBtMfSGD" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 id="popTitle" style="color: var(--gold); margin-top: 0;"&gt;SECURE ACCESS&lt;/h2&gt;</p><p data-block-id="r6msm0wY" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="popMsg"&gt;&lt;/p&gt;</p><p data-block-id="2KTrb8hq" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="background: #111; padding: 15px; border-radius: 10px; border: 1px solid #333; font-size: 0.85rem;"&gt;</p><p data-block-id="-hmrKbe-" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;strong&gt;CEO: TG ROLOMANE&lt;/strong&gt;&lt;br&gt;</p><p data-block-id="a-rDU2Rc" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span id="payment-details"&gt;Loading details...&lt;/span&gt;</p><p data-block-id="AMx8WOG4" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="8C2pzPZI" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn" style="background: var(--gold); color: black;" onclick="closePop()"&gt;CONFIRM DETAILS&lt;/button&gt;</p><p data-block-id="c9pEI0xt" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="NdJK3_3u" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="H69S2C3m" data-spacing="single"><br></p><p data-block-id="4-1_tZJ7" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;</p><p data-block-id="cpCRFi8p" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;MENTO AI V8&lt;/h1&gt;</p><p data-block-id="UrNefOKl" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="font-size: 0.8rem; color: #888;"&gt;DEVELOPED &amp; OWNED BY TG ROLOMANE (B HOOVE)&lt;/p&gt;</p><p data-block-id="NYP1rAu8" data-spacing="single"><br></p><p data-block-id="LXMBNVoo" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="timer"&gt;</p><p data-block-id="_QZEUDgy" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;span id="d" class="unit"&gt;00&lt;/span&gt;&lt;span class="label"&gt;Days&lt;/span&gt;&lt;/div&gt;</p><p data-block-id="f51B86VA" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;span id="h" class="unit"&gt;00&lt;/span&gt;&lt;span class="label"&gt;Hours&lt;/span&gt;&lt;/div&gt;</p><p data-block-id="11lYxVnl" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;span id="m" class="unit"&gt;00&lt;/span&gt;&lt;span class="label"&gt;Mins&lt;/span&gt;&lt;/div&gt;</p><p data-block-id="34WsU40X" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;span id="s" class="unit"&gt;00&lt;/span&gt;&lt;span class="label"&gt;Secs&lt;/span&gt;&lt;/div&gt;</p><p data-block-id="ooZ3IZCh" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="mTdsBp3n" data-spacing="single"><br></p><p data-block-id="8MLXeVbb" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price-card"&gt;</p><p data-block-id="wZNfKir6" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 style="margin: 0; color: var(--error);"&gt;🏆 THE GOLDEN TICKET&lt;/h2&gt;</p><p data-block-id="kdZ0AsPL" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price-val"&gt;&lt;span id="cur-sym"&gt;R&lt;/span&gt;&lt;span id="life-price"&gt;6,000&lt;/span&gt;&lt;/div&gt;</p><p data-block-id="Q-SGGlo7" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;LIFETIME ACCESS | FOUNDER STATUS&lt;/strong&gt;&lt;/p&gt;</p><p data-block-id="1Q2rQqWf" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-gold" onclick="openPop('lifetime')"&gt;CLAIM BARGAIN&lt;/button&gt;</p><p data-block-id="FKf_97Y4" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="UXZA5AMg" data-spacing="single"><br></p><p data-block-id="9Q5RqzI8" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="sub-buttons" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;"&gt;</p><p data-block-id="mjsipq9v" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn" style="background: var(--emerald); color: black;" onclick="openPop('yearly')"&gt;YEARLY: &lt;span class="cur-sym"&gt;R&lt;/span&gt;&lt;span id="year-price"&gt;320&lt;/span&gt;&lt;/button&gt;</p><p data-block-id="CJm5EBp-" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn" style="background: var(--sky); color: black;" onclick="openPop('monthly')"&gt;MONTHLY: &lt;span class="cur-sym"&gt;R&lt;/span&gt;&lt;span id="month-price"&gt;85&lt;/span&gt;&lt;/button&gt;</p><p data-block-id="KN6jCr06" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="3_44euhw" data-spacing="single"><br></p><p data-block-id="vUdHC0QP" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="margin-top: 30px;"&gt;</p><p data-block-id="BPyRIiTx" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 style="color: var(--gold);"&gt;🏆 HALL OF FAME&lt;/h3&gt;</p><p data-block-id="lp3NWQxo" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="fame-list"&gt;</p><p data-block-id="EMqxLggo" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="fame-badge"&gt;1. Pending...&lt;/span&gt;</p><p data-block-id="vO2Yr20E" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="fame-badge"&gt;2. Pending...&lt;/span&gt;</p><p data-block-id="yeYSc3NM" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="Sb67hpFh" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="-bm5jt3w" data-spacing="single"><br></p><p data-block-id="E_ayyuxY" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="font-size: 0.6rem; color: #555; margin-top: 25px;"&gt;"Subscribe within 60 days or it's your loss." | Release: 01 March 2026&lt;/p&gt;</p><p data-block-id="5ptI5maY" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p><p data-block-id="0iOCd1XZ" data-spacing="single"><br></p><p data-block-id="dOYoJFnv" data-spacing="single">&lt;script&gt;</p><p data-block-id="WGJ0kt4m" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;// 1. REGION LOCK LOGIC</p><p data-block-id="QzMIo2KQ" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;async function initApp() {</p><p data-block-id="UEebZOKE" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {</p><p data-block-id="mkwHLumk" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const response = await fetch('<a target="_blank" rel="noopener noreferrer nofollow" spellcheck="false" href="https://ipapi.co/json/">https://ipapi.co/json/</a>');</p><p data-block-id="2646h6m_" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const data = await response.json();</p><p data-block-id="9VTEYj5E" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const isSA = <a target="_blank" rel="noopener noreferrer nofollow" spellcheck="false" href="http://data.country">data.country</a>_code === 'ZA';</p><p data-block-id="vQS36xgC" data-spacing="single"><br></p><p data-block-id="2Tk42iu8" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (isSA) {</p><p data-block-id="Qc88Kr24" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setPrices("R", "6,000", "320", "85", "TymeBank: [Insert Account]");</p><p data-block-id="C4n47vad" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {</p><p data-block-id="APkJW3KJ" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setPrices("$", "360", "20", "5", "PayPal: [Insert Link]");</p><p data-block-id="7rhAynWd" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><p data-block-id="RUGCcGhM" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" rel="noopener noreferrer nofollow" spellcheck="false" href="http://document.body.style">document.body.style</a>.display = 'block'; // Show app only after prices set</p><p data-block-id="XO3bW7XG" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch (e) {</p><p data-block-id="Hc-xoT3I" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setPrices("R", "6,000", "320", "85", "TymeBank: [Insert Account]");</p><p data-block-id="UkmY6efl" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" rel="noopener noreferrer nofollow" spellcheck="false" href="http://document.body.style">document.body.style</a>.display = 'block';</p><p data-block-id="PEyQ22xd" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><p data-block-id="LITuex4l" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;}</p><p data-block-id="SMhTdD8r" data-spacing="single"><br></p><p data-block-id="TuCZ6V9x" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;function setPrices(sym, life, year, month, pay) {</p><p data-block-id="0tr3J49B" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('cur-sym').innerText = sym;</p><p data-block-id="6qactsky" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.querySelectorAll('.cur-sym').forEach(s =&gt; s.innerText = sym);</p><p data-block-id="RlJ4PFuH" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('life-price').innerText = life;</p><p data-block-id="PHpSbVgt" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('year-price').innerText = year;</p><p data-block-id="qWQ7uMZ4" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('month-price').innerText = month;</p><p data-block-id="SCLXprPi" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.payDetails = pay;</p><p data-block-id="cx3jJvn-" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;}</p><p data-block-id="f8dZPBGu" data-spacing="single"><br></p><p data-block-id="mxXEGIhQ" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;// 2. TIMER LOGIC</p><p data-block-id="LQ8O-aVF" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;const launch = new Date("2026-03-01T00:00:00+02:00").getTime();</p><p data-block-id="Y-7bixS6" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;setInterval(() =&gt; {</p><p data-block-id="QuEbQGW5" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const diff = launch - new Date().getTime();</p><p data-block-id="LrKqk1WL" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (diff &gt; 0) {</p><p data-block-id="TPiPF6L3" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('d').innerText = Math.floor(diff / 86400000);</p><p data-block-id="PEot_AgP" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('h').innerText = Math.floor((diff % 86400000) / 3600000);</p><p data-block-id="aO09zH7d" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('m').innerText = Math.floor((diff % 3600000) / 60000);</p><p data-block-id="422Lz3pB" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('s').innerText = Math.floor((diff % 60000) / 1000);</p><p data-block-id="s2qBXGUk" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><p data-block-id="35AtYTR5" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;}, 1000);</p><p data-block-id="3Me4B3Op" data-spacing="single"><br></p><p data-block-id="ULf1FU2O" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;// 3. INTERACTION LOGIC</p><p data-block-id="92GcKTEL" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;function openPop(type) {</p><p data-block-id="R4cwha7H" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('popMsg').innerText = "To activate " + type + " access, please use the secure payment channel below and send your proof to the CEO via WhatsApp.";</p><p data-block-id="gvBnmbVZ" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('payment-details').innerText = window.payDetails;</p><p data-block-id="QKow8Tqx" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('overlay').style.display = 'flex';</p><p data-block-id="yMSoNDEi" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;}</p><p data-block-id="TPqsAifg" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;function closePop() { document.getElementById('overlay').style.display = 'none'; }</p><p data-block-id="UlGxmFwu" data-spacing="single"><br></p><p data-block-id="3wWbshPl" data-spacing="single">&nbsp;&nbsp;&nbsp;&nbsp;initApp();</p><p data-block-id="Jx3yJsP1" data-spacing="single">&lt;/script&gt;</p><p data-block-id="Are4XebX" data-spacing="single">&lt;/body&gt;</p><p data-block-id="EmJMaafj" data-spacing="single">&lt;/html&gt;</p><p data-block-id="FeyJ6Xqz" data-spacing="single"><br></p>
+  </body>
+</html>
